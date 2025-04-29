@@ -191,10 +191,10 @@ rules:
   - RULE-SET,Sony / Domain,Game
   - RULE-SET,Nintend / Domain,Game
   - RULE-SET,TEST / Domain,Test
-  - RULE-SET,Proxy / Domain,国外
-  - RULE-SET,Globe / Domain,国外
-  - RULE-SET,Gfw / Domain,国外
-  - RULE-SET,Geolocation-!cn / Domain,国外
+  - RULE-SET,Proxy / Domain,🚀国外
+  - RULE-SET,Globe / Domain,🚀国外
+  - RULE-SET,Gfw / Domain,🚀国外
+  - RULE-SET,Geolocation-!cn / Domain,🚀国外
   - MATCH,其他
 
 # ========================
