@@ -129,7 +129,7 @@ proxy-groups:
   - {name: 🇭🇰 香港-自动, type: url-test, include-all: true, tolerance: 50, interval: 300, filter: "^(?!.*流量光)(?=.*(广港|香港|HK|Hong Kong|🇭🇰|HongKong)).*$"}
   - {name: 🇺🇲 美国-自动, type: url-test, include-all: true, tolerance: 50, interval: 300, filter: "^(?!.*流量光)(?=.*(广美|美|US|纽约|波特兰|达拉斯|俄勒|凤凰城|费利蒙|硅谷|拉斯|洛杉|圣何塞|圣克拉|西雅|芝加|🇺🇸|United States)).*$"}
   - {name: 🆓 免费-自动, type: url-test, include-all: true, tolerance: 50, interval: 300, filter: "^(?!.*流量光|直连|拒绝)"}
-  - {name: 🏀 所有-手动, type: select, include-all: true, filter: "^((?!(直连|拒绝)).)*$"}
+  - {name: 🏀 所有-手动, type: select, include-all: true}
   - {name: ⚽️ 所有-自动, type: url-test, include-all: true, tolerance: 50, interval: 300, filter: "^((?!(直连|拒绝)).)*$"}
   - {name: 🔫 Acck, type: url-test, include-all: true, tolerance: 50, interval: 300, filter: "(?=.*(Acck)).*$"}
   - {name: 🈚️ 甲骨文, type: url-test, include-all: true, tolerance: 50, interval: 300, filter: "(?=.*(甲骨文)).*$"}
