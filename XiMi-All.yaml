@@ -58,7 +58,7 @@ dns:
   fake-ip-range: 28.0.0.1/8
   fake-ip-filter-mode: blacklist
   fake-ip-filter:
-    - "rule-set:China / Domain,Private / Domain"
+    - "rule-set:China / Domain,Private / Domain,Direct / Domain"
     - +.lan
     - +.local
     - geosite:cn
@@ -157,6 +157,7 @@ rules:
   - RULE-SET,China / Domain,国内
   - RULE-SET,China / IP,国内,no-resolve
   - RULE-SET,Private / Domain,国内
+  - RULE-SET,Direct / Domain,国内
   - RULE-SET,Google / Domain,Google
   - RULE-SET,Google / IP,Google,no-resolve
   - RULE-SET,Github / Domain,GitHub
@@ -245,3 +246,4 @@ rule-providers:
   China / Domain: {<<: *domain, url: "https://github.geekery.cn/raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/cn.mrs"}
   China / IP: {<<: *ip, url: "https://github.geekery.cn/raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/cn.mrs"}
   Private / Domain: {<<: *domain, url: "https://github.geekery.cn/raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/private.mrs"}
+  Direct / Domain: {<<: *class, url: "https://github.geekery.cn/raw.githubusercontent.com/liandu2024/clash/refs/heads/main/list/Direct.list"}
