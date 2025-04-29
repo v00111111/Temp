@@ -128,22 +128,20 @@ proxy-groups:
   - {name: Microsoft, <<: *default}
   - {name: Test, <<: *default}
   - {name: 其他, <<: *default}
-  
+
+  - {name: 🇭🇰 香港-自动, type: url-test, include-all: true, tolerance: 50, interval: 300, filter: "^(?!.*流量光)(?=.*(广港|香港|HK|Hong Kong|🇭🇰|HongKong)).*$"}
+  - {name: 🇺🇲 美国-自动, type: url-test, include-all: true, tolerance: 50, interval: 300, filter: "^(?!.*流量光)(?=.*(广美|美|US|纽约|波特兰|达拉斯|俄勒|凤凰城|费利蒙|硅谷|拉斯|洛杉|圣何塞|圣克拉|西雅|芝加|🇺🇸|United States)).*$"}
+  - {name: 免费-自动, type: url-test, include-all: true, tolerance: 50, interval: 300, filter: "^(?!.*流量光|直连|拒绝)"}
+  - {name: 所有-手动, type: select, include-all: true, filter: "^((?!(直连|拒绝)).)*$"}
+  - {name: 所有-自动, type: url-test, include-all: true, tolerance: 50, interval: 300, filter: "^((?!(直连|拒绝)).)*$"}
   - {name: Acck, type: url-test, include-all: true, tolerance: 50, interval: 300, filter: "(?=.*(Acck)).*$"}
   - {name: 甲骨文, type: url-test, include-all: true, tolerance: 50, interval: 300, filter: "(?=.*(甲骨文)).*$"}
-  
   - {name: 流量光-自动, type: url-test, include-all: true, tolerance: 50, interval: 300, filter: "(?=.*(流量光)).*$"}
   - {name: 流量光-手动, type: select, include-all: true, filter: "(?=.*(流量光)).*$"}
-  
-  - {name: 所有-手动, type: select, include-all: true, filter: "^((?!(直连|拒绝)).)*$"}
-  - {name: 免费-自动, type: url-test, include-all: true, tolerance: 50, interval: 300, filter: "^(?!.*流量光|直连|拒绝)"}  
-  - {name: 所有-自动, type: url-test, include-all: true, tolerance: 50, interval: 300, filter: "^((?!(直连|拒绝)).)*$"}
-  - {name: 🇭🇰 香港-自动, type: url-test, include-all: true, tolerance: 50, interval: 300, filter: "^(?!.*流量光)(?=.*(广港|香港|HK|Hong Kong|🇭🇰|HongKong)).*$"}
   - {name: 台湾-自动, type: url-test, include-all: true, tolerance: 50, interval: 300, filter: "^(?!.*流量光)(?=.*(广台|台湾|台灣|TW|Tai Wan|🇹🇼|🇨🇳|TaiWan|Taiwan)).*$"}
   - {name: 🇯🇵 日本-自动, type: url-test, include-all: true, tolerance: 50, interval: 300, filter: "^(?!.*流量光)(?=.*(广日|日本|JP|川日|东京|大阪|泉日|埼玉|沪日|深日|🇯🇵|Japan)).*$"}
   - {name: 新加坡-自动, type: url-test, include-all: true, tolerance: 50, interval: 300, filter: "^(?!.*流量光)(?=.*(新加坡|新|SG|Singapore|🇸🇬)).*$"}
   - {name: 韩国-自动, type: url-test, include-all: true, tolerance: 50, interval: 300, filter: "^(?!.*流量光)(?=.*(广韩|韩国|韓國|KR|首尔|春川|🇰🇷|Korea)).*$"}
-  - {name: 🇺🇲 美国-自动, type: url-test, include-all: true, tolerance: 50, interval: 300, filter: "^(?!.*流量光)(?=.*(广美|美|US|纽约|波特兰|达拉斯|俄勒|凤凰城|费利蒙|硅谷|拉斯|洛杉|圣何塞|圣克拉|西雅|芝加|🇺🇸|United States)).*$"}
   - {name: 英国-自动, type: url-test, include-all: true, tolerance: 50, interval: 300, filter: "^(?!.*流量光)(?=.*(英国|英|伦敦|UK|United Kingdom|🇬🇧)).*$"}
   - {name: 澳大利亚-自动, type: url-test, include-all: true, tolerance: 50, interval: 300, filter: "^(?!.*流量光)(?=.*(澳大利亚|澳洲|墨尔本|悉尼|AU|Australia|🇦🇺)).*$"}
   - {name: 其他-自动, type: url-test, include-all: true, tolerance: 50, interval: 300, filter: "^((?!(直连|拒绝|流量光|广港|香港|HK|Hong Kong|🇭🇰|HongKong|广台|台湾|台灣|TW|Tai Wan|🇹🇼|🇨🇳|TaiWan|Taiwan|广日|日本|JP|川日|东京|大阪|泉日|埼玉|沪日|深日|🇯🇵|Japan|新加坡|新|SG|Singapore|🇸🇬|广韩|韩国|韓國|KR|首尔|春川|🇰🇷|Korea|广美|美|US|纽约|波特兰|达拉斯|俄勒|凤凰城|费利蒙|硅谷|拉斯|洛杉|圣何塞|圣克拉|西雅|芝加|🇺🇸|United States|英国|英|伦敦|UK|United Kingdom|🇬🇧|澳大利亚|澳洲|墨尔本|悉尼|AU|Australia|🇦🇺)).)*$"}
