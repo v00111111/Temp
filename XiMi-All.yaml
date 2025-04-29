@@ -151,7 +151,7 @@ proxy-groups:
 # 规则引擎（rules）
 # ========================
 rules:
-  - DOMAIN-SUFFIX,gemini.google.com / Domain,TikTok    
+  - DOMAIN-SUFFIX,gemini.google.com,🎵 TikTok    
   - RULE-SET,China / Domain,国内
   - RULE-SET,China / IP,国内,no-resolve
   - RULE-SET,Private / Domain,国内
