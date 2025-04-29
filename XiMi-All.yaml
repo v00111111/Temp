@@ -21,8 +21,8 @@ proxy-providers:
         up: "10 Mbps"
 
 proxies:
-  - {name: 直连, type: direct}
-  - {name: 拒绝, type: reject}
+  - {name: 🎯 直连, type: direct}
+  - {name: 🫷 拒绝, type: reject}
 
 # 用于下载订阅时指定UA
 global-ua: clash.meta
