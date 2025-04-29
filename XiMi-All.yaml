@@ -58,7 +58,7 @@ dns:
   fake-ip-range: 28.0.0.1/8
   fake-ip-filter-mode: blacklist
   fake-ip-filter:
-    - "rule-set:Direct,China,Private"
+    - "rule-set:China,Private"
     - +.lan
     - +.local
     - geosite:cn
@@ -154,7 +154,6 @@ proxy-groups:
 # ========================
 rules:
   - DOMAIN-SUFFIX,gemini.google.com / Domain,TikTok    
-  - RULE-SET,Direct / Domain,国内
   - RULE-SET,China / Domain,国内
   - RULE-SET,China / IP,国内,no-resolve
   - RULE-SET,Private / Domain,国内
@@ -193,6 +192,7 @@ rules:
   - RULE-SET,TEST / Domain,Test
   - RULE-SET,Proxy / Domain,国外
   - RULE-SET,Globe / Domain,国外
+  - RULE-SET,Gfw / Domain,国外
   - RULE-SET,Geolocation-!cn / Domain,国外
   - MATCH,其他
 
@@ -241,7 +241,7 @@ rule-providers:
   Proxy / Domain: {<<: *class, url: "https://github.geekery.cn/raw.githubusercontent.com/liandu2024/clash/refs/heads/main/list/Proxy.list"}
   Globe / Domain: {<<: *class, url: "https://github.geekery.cn/raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Global/Global.list"} 
   Geolocation-!cn / Domain: {<<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/geolocation-!cn.mrs"}
-  Direct / Domain: {<<: *class, url: "https://github.geekery.cn/raw.githubusercontent.com/liandu2024/clash/refs/heads/main/list/Direct.list"}
+  Gfw / Domain: {<<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/gfw.mrs"}
   China / Domain: {<<: *domain, url: "https://github.geekery.cn/raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/cn.mrs"}
   China / IP: {<<: *ip, url: "https://github.geekery.cn/raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/cn.mrs"}
   Private / Domain: {<<: *domain, url: "https://github.geekery.cn/raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/private.mrs"}
