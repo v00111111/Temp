@@ -8,7 +8,7 @@ proxy-providers:
   GitHub-All:
     url: "http://192.168.28.6:3008/Su1J1M1Ma0Hell0W0lrd/download/collection/Dino-All?target=ClashMeta"
     type: http
-    interval: 86400
+    interval: 1800
     health-check:
       enable: true
       url: https://www.gstatic.com/generate_204
