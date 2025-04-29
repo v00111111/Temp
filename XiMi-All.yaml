@@ -103,7 +103,7 @@ default: &default
 
 proxy-groups:
   - {name: 国内, <<: *default}
-  - {name: 国外, <<: *default}
+  - {name: 🚀国外, <<: *default}
   - {name: Google, <<: *default}
   - {name: GitHub, <<: *default}
   - {name: YouTube, <<: *default}
