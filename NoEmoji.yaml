@@ -159,7 +159,8 @@ proxy-groups:
 # ========================
 # 规则引擎（rules）
 # ========================
-rules:  
+rules: 
+  - DOMAIN-SUFFIX,portal.adsl.cloud,国外
   - DOMAIN-SUFFIX,gemini.google.com,TikTok    
   - RULE-SET,China / Domain,国内
   - RULE-SET,China / IP,国内,no-resolve
