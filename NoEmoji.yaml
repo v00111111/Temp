@@ -159,12 +159,9 @@ proxy-groups:
 # ========================
 # 规则引擎（rules）
 # ========================
-rules: 
+rules:  
   - DOMAIN-SUFFIX,gemini.google.com,TikTok    
-  - RULE-SET,China / Domain,国内
-  - RULE-SET,China / IP,国内,no-resolve
   - RULE-SET,Private / Domain,国内
-  - RULE-SET,Direct / Domain,国内
   - RULE-SET,Google / Domain,Google
   - RULE-SET,Google / IP,Google,no-resolve
   - RULE-SET,Github / Domain,GitHub
@@ -202,6 +199,9 @@ rules:
   - RULE-SET,Globe / Domain,国外
   - RULE-SET,Gfw / Domain,国外
   - RULE-SET,Geolocation-!cn / Domain,国外
+  - RULE-SET,Direct / Domain,国内
+  - RULE-SET,China / Domain,国内
+  - RULE-SET,China / IP,国内,no-resolve
   - MATCH,其他
 
 # ========================
